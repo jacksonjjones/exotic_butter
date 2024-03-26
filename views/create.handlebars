@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="column nine offset-by-one text-left">
+
+      <form class="createBlogPost">
+        {{! POST }}
+        {{! title }}
+        <div class="mb-3">
+          <label for="titleInput">Title</label>
+          <input class="u-full-width" id="titleInput" maxlength="50" />
+        </div>
+        {{! body }}
+        <div class="mb-3">
+          <label for="bodyInput">Body</label>
+          <textarea class="u-full-width" id="bodyInput" rows="10"></textarea>
+        </div>
+        {{! submit Btn }}
+        <div class="text-center">
+          <button
+            type="submit"
+            class="button-primary"
+          >Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="/js/newPostHandler.js"></script>
