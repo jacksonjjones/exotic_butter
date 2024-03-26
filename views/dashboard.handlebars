@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container Dashboard-containerOne">
   <div class="row">
     <div class="nine columns offset-by-three text-center user-name">
       <h2 id="blogName">{{name}}'s Blog</h2>
@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container Dashboard-containerTwo">
   <div class="row">
     <div class="ten columns offset-by-one text-left mt-5">
       {{#if blogPosts.length}}
@@ -15,7 +15,7 @@
           <br>
         {{/each}}
       {{else}}
-        <p>This user hasn't created any posts yet!</p>
+        <p class="text-center">This user hasn't created any posts yet!</p> <!-- Updated class to text-center -->
       {{/if}}
     </div>
   </div>
@@ -23,7 +23,7 @@
   {{#if (is_my_page user.id userId)}}
     <div class="row">
       <div class="ten columns offset-by-one text-center">
-        <a href="/create" class="button button-primary mt-3">Create a post!</a>
+        <a href="/create" class="button button-primary mt-3">Create a post!</a> <!-- Updated class to text-center -->
       </div>
     </div>
   {{/if}}

@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    padding: 0; /* Remove default margin */
+  }
+  .container {
+    width: 100%; /* Set container width to 100% of the viewport width */
+    margin: 0; /* Center the container horizontally */
+    padding: 0; /* Remove any padding */
+  
+  }
+  
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 0.25rem; /* Add border radius */
+    border: 1px solid rgba(0, 0, 0, 0.125); /* Add border */
+    padding: 1rem; /* Add padding */
+    margin-bottom: 1rem; /* Add margin bottom */
+}
+
+.card-header {
+    background-color: #f8f9fa; /* Add background color to header */
+    padding: 0.75rem 1.25rem; /* Add padding */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); /* Add bottom border */
+}
+
+.card-body {
+    padding: 1.25rem; /* Add padding */
+}
+
+.card-title {
+    margin-bottom: 0.75rem
+}
+    
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Adjust spacing as needed */
+  }
+  .navBar {
+    padding: 20px 0; /* Adjust the padding as needed */
+    width: 100vw;
+    background-color: #f8f9fa;
+   
+    opacity: 75%;
+  }
+  
+  .navBar nav a {
+    margin-left: 30px;
+    margin-right: 5px; /* Adjust the margin between each link */
+    font-size: 15px; /* Adjust the font size as needed */
+    text-decoration: none;
+    color: black;
+
+
+}
+ 
+  .navBar nav button {
+    margin-left: 5px;
+    margin-right: 3px; /* Adjust the margin between the links and the button */
+    font-size: 10px; /* Adjust the font size as needed */
+    border: none;
+    color: black;
+}
+h1 {
+     margin-top: 5px;
+    margin-left: 25px;
+    padding-top: 5px;
+}
+h3 a {
+    text-decoration: none;
+}
+main {
+    margin-top: 10px;
+    margin-left: 350px;
+    width: 100vw;
+
+}
+.navBar nav a:hover,
+.navBar nav button:hover {
+    opacity: 50%; /* Change the text color on hover */
+    font-weight: 425;
+}
+.custom-width {
+    width: 88%;
+}
+.Dashboard-containerOne {
+    text-align: center;
+    padding-right: 195px;
+}
+.Dashboard-containerTwo {
+    text-align: center;
+}
+  
+  

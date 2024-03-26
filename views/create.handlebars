@@ -1,18 +1,17 @@
 <div class="container">
   <div class="row">
-    <div class="column nine offset-by-one text-left">
-
+    <div class="column nine offset-by-one text-left mr-10"> <!-- Add mr-1 class for margin-right -->
       <form class="createBlogPost">
         {{! POST }}
         {{! title }}
         <div class="mb-3">
           <label for="titleInput">Title</label>
-          <input class="u-full-width" id="titleInput" maxlength="50" />
+          <input class="custom-width" id="titleInput" maxlength="50" />
         </div>
         {{! body }}
         <div class="mb-3">
           <label for="bodyInput">Body</label>
-          <textarea class="u-full-width" id="bodyInput" rows="10"></textarea>
+          <textarea class="custom-width" id="bodyInput" rows="10"></textarea>
         </div>
         {{! submit Btn }}
         <div class="text-center">
@@ -22,9 +21,9 @@
           >Submit</button>
         </div>
       </form>
-
     </div>
   </div>
 </div>
 
 <script src="/js/newPostHandler.js"></script>
+

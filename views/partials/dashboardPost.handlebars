@@ -1,13 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="card text-dark shadow mb-3">
-      <div class="text-center mx-auto p-3">
-        <h2><a href="/blogPost/{{id}}" class="text-primary">{{title}}</a></h2>
-        <p>Created by {{user.name}} on {{format_date date_created}}</p>
-        <p>{{description}}</p>
-        <button class="button-primary" id="editBtn" data-id="{{id}}">Edit</button>
-        <button class="button-primary" id="deleteBtn" data-id="{{id}}">Delete</button>
+    <div class="eight columns offset-by-two">
+      <div class="card text-dark shadow mb-3">
+        <div class="text-center p-3">
+          <h2><a href="/blogPost/{{id}}" class="text-primary">{{title}}</a></h2>
+          <p>Created by {{user.name}} on {{format_date date_created}}</p>
+          <p>{{description}}</p>
+          <button class="button-primary" id="editBtn" data-id="{{id}}">Edit</button>
+          <button class="button-primary" id="deleteBtn" data-id="{{id}}">Delete</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
