@@ -1,32 +1,28 @@
-
-body {
+  body {
     margin: 0;
-    padding: 0; /* Remove default margin */
+    padding: 0; 
   }
   .container {
-    width: 100%; /* Set container width to 100% of the viewport width */
-    margin: 0; /* Center the container horizontally */
-    padding: 0; /* Remove any padding */
-  
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
   }
-  
-  
   .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border-radius: 0.25rem; /* Add border radius */
-    border: 1px solid rgba(0, 0, 0, 0.125); /* Add border */
-    padding: 1rem; /* Add padding */
-    margin-bottom: 1rem; /* Add margin bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 0.25rem; 
+    border: 1px solid rgba(0, 0, 0, 0.125); 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
 }
 
 .card-header {
-    background-color: #f8f9fa; /* Add background color to header */
-    padding: 0.75rem 1.25rem; /* Add padding */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125); /* Add bottom border */
+    background-color: #f8f9fa; 
+    padding: 0.75rem 1.25rem; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
 }
 
 .card-body {
-    padding: 1.25rem; /* Add padding */
+    padding: 1.25rem; 
 }
 
 .card-title {
@@ -34,10 +30,10 @@ body {
 }
     
   .mb-4 {
-    margin-bottom: 1.5rem; /* Adjust spacing as needed */
+    margin-bottom: 1.5rem; 
   }
   .navBar {
-    padding: 20px 0; /* Adjust the padding as needed */
+    padding: 20px 0; 
     width: 100vw;
     background-color: #f8f9fa;
    
@@ -46,8 +42,8 @@ body {
   
   .navBar nav a {
     margin-left: 30px;
-    margin-right: 5px; /* Adjust the margin between each link */
-    font-size: 15px; /* Adjust the font size as needed */
+    margin-right: 5px; 
+    font-size: 15px; 
     text-decoration: none;
     color: black;
 
@@ -56,8 +52,8 @@ body {
  
   .navBar nav button {
     margin-left: 5px;
-    margin-right: 3px; /* Adjust the margin between the links and the button */
-    font-size: 10px; /* Adjust the font size as needed */
+    margin-right: 3px; 
+    font-size: 10px; 
     border: none;
     color: black;
 }
@@ -77,7 +73,7 @@ main {
 }
 .navBar nav a:hover,
 .navBar nav button:hover {
-    opacity: 50%; /* Change the text color on hover */
+    opacity: 50%; 
     font-weight: 425;
 }
 .custom-width {

@@ -1,12 +1,10 @@
-// Function that allows users to post comments to blog posts
+// function to add a comment to a blog post
 async function newCommentHandler(event) {
     event.preventDefault();
   
     console.log("clicked me");
   
-    // get text and trim whitespace
     const comment_body = document.getElementById("comment").value.trim();
-    // get post id from URL
     const url = window.location.toString().split("/");
     const blogPost_id = url[url.length - 1];
   

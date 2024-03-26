@@ -2,7 +2,7 @@
 const router = require("express").Router();
 const { BlogPost, Comment, User } = require("../../models");
 
-// CREATE Comment
+// Route to CREATE new comments
 router.post("/", async (req, res) => {
   try {
     console.log("we made it");
@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// READ all Comments
+// Route to READ all comments
 router.get("/", async (req, res) => {
   try {
     const commentData = await Comment.findAll({
@@ -40,7 +40,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// UPDATE Comment
+// Route to UPDATE a comment
 router.put("/:id", async (req, res) => {
   try {
     const updatedComment = await Comment.update(req.body, {
@@ -62,7 +62,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// DELETE Comment
+// Route to DELETE a comment
 router.delete("/:id", async (req, res) => {
   try {
     const comment = await Comment.destroy({

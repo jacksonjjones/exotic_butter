@@ -15,7 +15,7 @@
           <br>
         {{/each}}
       {{else}}
-        <p class="text-center">This user hasn't created any posts yet!</p> <!-- Updated class to text-center -->
+        <p class="text-center">This user hasn't created any posts yet!</p> 
       {{/if}}
     </div>
   </div>
@@ -23,7 +23,7 @@
   {{#if (is_my_page user.id userId)}}
     <div class="row">
       <div class="ten columns offset-by-one text-center">
-        <a href="/create" class="button button-primary mt-3">Create a post!</a> <!-- Updated class to text-center -->
+        <a href="/create" class="button button-primary mt-3">Create a post!</a> 
       </div>
     </div>
   {{/if}}

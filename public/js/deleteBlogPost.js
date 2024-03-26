@@ -1,4 +1,4 @@
-// Function created allowing user to delete blog posts from the individual blog post page
+// function to delete blog post from blog post page
 const deletePostHandler = async (event) => {
     event.preventDefault();
     console.log("clicked me");

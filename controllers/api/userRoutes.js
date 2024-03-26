@@ -2,7 +2,7 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
-// Posts new user email, username, and password to database
+// Posts new user email, name, and password to database
 router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);

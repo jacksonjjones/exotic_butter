@@ -1,6 +1,6 @@
 let blogPost = window.location.pathname.split("/");
 
-// Allows user to edit blog posts from the blogPost page
+// function to edit blog post from blog post page
 const submitEdit = async (event) => {
   event.preventDefault();
   const title = document.getElementById("titleInput").value;

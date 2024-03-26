@@ -1,11 +1,10 @@
 let blogPost = window.location.pathname.split("/");
 
-// Function created allowing user to edit blog posts from the individual blog post page
+// function to edit blog post from blog post page
 const editPost = async (event) => {
   event.preventDefault();
   console.log("clicked me");
 
-  // get text and trim whitespace
   const comment_body = document.getElementById("editBtn").value.trim();
 
   console.log(blogPost);
