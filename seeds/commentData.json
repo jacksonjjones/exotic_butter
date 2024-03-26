@@ -1,0 +1,17 @@
+[
+    {
+      "blog_id": 1,
+      "comment_description": "A radical mobile app that gives me the best prices for my fav makeup items!",
+      "user_id": 1
+    },
+    {
+      "blog_id": 2,
+      "comment_description": "A web app that will finally allow me find the cutest pigeons ever!",
+      "user_id": 2
+    },
+    {
+      "blog_id": 3,
+      "comment_description": "Solid Chiefs news.",
+      "user_id": 3
+    }
+  ]
