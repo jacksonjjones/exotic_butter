@@ -1,28 +1,28 @@
-<div class="container Dashboard-containerOne">
+<div class="container">
   <div class="row">
-    <div class="nine columns offset-by-three text-center user-name">
+    <div class="twelve columns user-name">
       <h2 id="blogName">{{name}}'s Blog</h2>
     </div>
   </div>
 </div>
 
-<div class="container Dashboard-containerTwo">
+<div class="container">
   <div class="row">
-    <div class="ten columns offset-by-one text-left mt-5">
+    <div class="twelve columns mt-5">
       {{#if blogPosts.length}}
         {{#each blogPosts as |blogPost|}}
           {{> dashboardPost blogPost}}
           <br>
         {{/each}}
       {{else}}
-        <p class="text-center">This user hasn't created any posts yet!</p> 
+        <p class="">This user hasn't created any posts yet!</p> 
       {{/if}}
     </div>
   </div>
 
   {{#if (is_my_page user.id userId)}}
     <div class="row">
-      <div class="ten columns offset-by-one text-center">
+      <div class="twelve columns">
         <a href="/create" class="button button-primary mt-3">Create a post!</a> 
       </div>
     </div>
@@ -30,6 +30,7 @@
 </div>
 
 <script src="/js/dashboard.js"></script>
+
 
 
 
