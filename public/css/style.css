@@ -79,11 +79,16 @@ main {
 .custom-width {
     width: 88%;
 }
-.Dashboard-containerOne {
-   
-}
-.Dashboard-containerTwo {
-    
+.user-name {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.25rem; 
+  border: 1px solid rgba(0, 0, 0, 0.125); 
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+  background-color: #f8f9fa; 
+    padding: 0.75rem 1.25rem; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
+  
 }
   
   
