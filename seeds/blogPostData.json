@@ -1,17 +1,23 @@
 [
     {
-      "blog_title": "Makejup",
-      "description": "A mobile app that will help me find my most wanted makeup items for the best price."
+      "title": "Makejup",
+      "description": "A mobile app that will help me find my most wanted makeup items for the best price.",
+      "date_created": "October 6, 1998",
+      "user_id": 1
       
     },
     {
-      "blog_title": "Pigeonity",
-      "description": "A web app that will help me find the cutest pigeons available!"
+      "title": "Pigeonity",
+      "description": "A web app that will help me find the cutest pigeons available!",
+      "date_created": "may 18, 2001",
+      "user_id": 2
      
     },
     {
-      "blog_title": "Chiefme",
-      "description": "A web app that brings me the best Kansas City Chiefs news. "
+      "title": "Chiefme",
+      "description": "A web app that brings me the best Kansas City Chiefs news. ",
+      "date_created": "November 11, 1974",
+      "user_id": 3
      
     }
   ]

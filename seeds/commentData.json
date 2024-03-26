@@ -1,17 +1,20 @@
 [
     {
-      "blog_id": 1,
-      "comment_description": "A radical mobile app that gives me the best prices for my fav makeup items!",
-      "user_id": 1
+      "comment_body": "A radical mobile app that gives me the best prices for my fav makeup items!",
+      "date_created": "January 3, 2003",
+      "user_id": 1,
+      "blogPost_id": 1
     },
     {
-      "blog_id": 2,
-      "comment_description": "A web app that will finally allow me find the cutest pigeons ever!",
-      "user_id": 2
+      "comment_body": "A web app that will finally allow me find the cutest pigeons ever!",
+      "date_created": "April 8, 2010",
+      "user_id": 2,
+      "blogPost_id": 2
     },
     {
-      "blog_id": 3,
-      "comment_description": "Solid Chiefs news.",
-      "user_id": 3
+      "comment_body": "Solid Chiefs news.",
+      "date_created": "October 16, 2023",
+      "user_id": 3,
+      "blogPost_id": 3
     }
   ]
