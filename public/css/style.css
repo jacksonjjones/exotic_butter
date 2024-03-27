@@ -1,13 +1,13 @@
-  body {
+body {
     margin: 0;
     padding: 0; 
   }
-  .container {
+.container {
     width: 100%; 
     margin: 0; 
     padding: 0; 
   }
-  .card {
+.card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 0.25rem; 
     border: 1px solid rgba(0, 0, 0, 0.125); 
@@ -29,10 +29,10 @@
     margin-bottom: 0.75rem
 }
     
-  .mb-4 {
+.mb-4 {
     margin-bottom: 1.5rem; 
   }
-  .navBar {
+.navBar {
     padding: 20px 0; 
     width: 100vw;
     background-color: #f8f9fa;
@@ -40,7 +40,7 @@
     opacity: 75%;
   }
   
-  .navBar nav a {
+.navBar nav a {
     margin-left: 30px;
     margin-right: 5px; 
     font-size: 15px; 
@@ -50,7 +50,7 @@
 
 }
  
-  .navBar nav button {
+.navBar nav button {
     margin-left: 5px;
     margin-right: 3px; 
     font-size: 10px; 
@@ -86,8 +86,8 @@ main {
   padding: 1rem; 
   margin-bottom: 1rem; 
   background-color: #f8f9fa; 
-    padding: 0.75rem 1.25rem; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
+  padding: 0.75rem 1.25rem; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
   
 }
   

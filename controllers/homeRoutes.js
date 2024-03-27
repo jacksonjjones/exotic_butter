@@ -1,11 +1,12 @@
+// Importing required modules and middleware
+const router = require("express").Router(); // Importing Express Router
+const { BlogPost, User, Comment } = require("../models"); // Importing models
+const withAuth = require("../utils/auth"); // Importing authentication middleware
 
-const router = require("express").Router();
-const { BlogPost, User, Comment } = require("../models");
-const withAuth = require("../utils/auth");
-
+// Route to render the homepage
 router.get("/", async (req, res) => {
   try {
- 
+    // Fetching all blog post data with associated user and comments
     const blogPostData = await BlogPost.findAll({
       include: [
         {
@@ -19,27 +20,27 @@ router.get("/", async (req, res) => {
       ],
     });
 
-    
+    // Mapping blog post data to plain objects
     const blogPosts = blogPostData.map((blogPost) =>
       blogPost.get({ plain: true })
     );
 
-    
+    // Rendering the homepage template with fetched data
     res.render("homepage", {
       blogPosts,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
-    console.log(err);
+    console.error(err);
     res.status(500).json(err);
   }
 });
 
-
+// Route to render a single blog post page with associated user and comments
 router.get("/blogPost/:id", withAuth, async (req, res) => {
   try {
+    // Fetching blog post data by primary key with associated user and comments
     const blogPostData = await BlogPost.findByPk(req.params.id, {
-     
       include: [
         {
           model: User,
@@ -52,26 +53,26 @@ router.get("/blogPost/:id", withAuth, async (req, res) => {
       ],
     });
 
+    // Converting blog post data to a plain object
     const blogPost = blogPostData.get({ plain: true });
-    console.log(blogPost);
 
+    // Rendering the blog post template with fetched data
     res.render("blogPost", {
       ...blogPost,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
-    res.redirect("/login");
   }
 });
 
-
+// Route to render the dashboard page with user's blog posts and comments
 router.get("/dashboard", withAuth, async (req, res) => {
   try {
-   
+    // Fetching user data by primary key with associated blog posts and comments
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
-     
       include: [
         {
           model: BlogPost,
@@ -83,21 +84,24 @@ router.get("/dashboard", withAuth, async (req, res) => {
       ],
     });
 
+    // Converting user data to a plain object
     const user = userData.get({ plain: true });
-    console.log(user)
 
+    // Rendering the dashboard template with fetched data
     res.render("dashboard", {
       ...user,
       logged_in: true,
     });
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
   }
 });
 
-
+// Route to render the create post page
 router.get("/create", async (req, res) => {
   try {
+    // Checking if user is logged in and rendering the create post template accordingly
     if (req.session.logged_in) {
       res.render("create", {
         logged_in: req.session.logged_in,
@@ -108,16 +112,16 @@ router.get("/create", async (req, res) => {
       res.redirect("/login");
     }
   } catch (err) {
-    console.log(err);
+    console.error(err);
     res.status(500).json(err);
   }
 });
 
-
+// Route to render the edit post page for a specific post
 router.get("/create/:id", async (req, res) => {
   try {
+    // Fetching specific blog post data by primary key with associated user and comments
     const blogPostData = await BlogPost.findByPk(req.params.id, {
-      
       include: [
         {
           model: User,
@@ -130,9 +134,10 @@ router.get("/create/:id", async (req, res) => {
       ],
     });
 
+    // Converting blog post data to a plain object
     const blogPost = blogPostData.get({ plain: true });
-    console.log(blogPost);
 
+    // Checking if user is logged in and rendering the edit post template accordingly
     if (req.session.logged_in) {
       res.render("edit", {
         ...blogPost,
@@ -144,20 +149,20 @@ router.get("/create/:id", async (req, res) => {
       res.redirect("/login");
     }
   } catch (err) {
-    console.log(err);
+    console.error(err);
     res.status(500).json(err);
   }
 });
 
+// Route to render the login page
 router.all("/login", (req, res) => {
-  
+  // Redirecting to the dashboard page if user is already logged in, otherwise rendering the login page
   if (req.session.logged_in) {
     res.redirect("/dashboard");
     return;
   }
-
   res.render("login");
 });
 
-
+// Exporting the router module
 module.exports = router;

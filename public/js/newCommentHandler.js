@@ -28,7 +28,7 @@ async function newCommentHandler(event) {
     }
   }
   
-  // Event Listener
+  // event listener 
   console.log("HERE!");
   console.log(document.getElementById("comment-form"));
   document

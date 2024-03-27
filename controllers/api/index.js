@@ -1,13 +1,13 @@
-// Imports
+// imports
 const router = require("express").Router();
 const userRoutes = require("./userRoutes");
-const blogPostRoutes = require("./blogRoutes");
+const blogPostRoutes = require("./blogPostRoutes");
 const commentRoutes = require("./commentRoutes");
 
-// Middleware
+// middleware
 router.use("/users", userRoutes);
 router.use("/blogPost", blogPostRoutes);
 router.use("/comment", commentRoutes);
 
-// Exports
+// exports
 module.exports = router;

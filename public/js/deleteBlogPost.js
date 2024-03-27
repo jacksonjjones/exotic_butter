@@ -20,7 +20,7 @@ const deletePostHandler = async (event) => {
   
   const deleteButton = document.querySelectorAll("#deleteBtn");
   
-  // Iterates over all buttons on the page allowing for delete functionality
+  // loop through all delete buttons on the page to enable delete functionality
   for (let i = 0; i < deleteButton.length; i++) {
     deleteButton[i].addEventListener("click", deletePostHandler);
   }

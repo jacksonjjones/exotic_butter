@@ -1,13 +1,13 @@
-// login handler
+// user login handler
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-  // Get values from login form
+  // obtain values from login form
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
 
   if (email && password) {
-    // Send a POST request to the API endpoint
+    // send a POST request to the API endpoint
     const response = await fetch("/api/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the home page
+      // if successful, redirect browser to the home page
       document.location.replace("/");
     } else {
       alert(response.statusText);
@@ -23,7 +23,7 @@ const loginFormHandler = async (event) => {
   }
 };
 
-// Sign up handler
+// user signup handler
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
@@ -46,7 +46,7 @@ const signupFormHandler = async (event) => {
   }
 };
 
-// Event Listeners
+// event listeners
 document
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);

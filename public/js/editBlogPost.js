@@ -14,7 +14,7 @@ const editPost = async (event) => {
 
 const editButton = document.querySelectorAll("#editBtn");
 
-// Iterates over all buttons on the page allowing for edit functionality
+// loop through all delete buttons on the page to enable delete functionality
 for (let i = 0; i < editButton.length; i++) {
   editButton[i].addEventListener("click", editPost);
 }
